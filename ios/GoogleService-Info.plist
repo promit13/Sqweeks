@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>108826488993-ksar8kknm9oklrnda5d3mh35gqmi4kqq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.108826488993-ksar8kknm9oklrnda5d3mh35gqmi4kqq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCufE2MVLxtv1bUCP-xi0kPHjsvky6eGHo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>108826488993</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.app.sqweeks</string>
+	<key>PROJECT_ID</key>
+	<string>sqweek-70f0f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sqweek-70f0f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:108826488993:ios:dee25e5cd2bdde9bb440e0</string>
+	<key>DATABASE_URL</key>
+	<string>https://sqweek-70f0f.firebaseio.com</string>
+</dict>
+</plist>

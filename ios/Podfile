@@ -1,0 +1,75 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+target 'Suds' do
+  pod 'Stripe', '~> 19.0.1'
+  # Pods for Suds
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # [OPTIONAL PODS] - comment out pods for firebase products you won't be using.
+  # pod 'Firebase/AdMob', '~> 5.20.1'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Functions'
+  pod 'Firebase/DynamicLinks'
+  pod 'Firebase/Firestore'
+  # pod 'Firebase/Invites', '~> 5.20.1'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/RemoteConfig'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Performance'
+  pod 'Fabric', '~> 1.9.0'
+  pod 'Crashlytics', '~> 3.12.0'
+
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  # pod 'React', :path => '../node_modules/react-native'
+  pod 'React', :path => '../node_modules/react-native', subspecs: [
+    'Core',
+    'CxxBridge',
+    'DevSupport',
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTGeolocation',
+    'RCTImage',
+    'RCTLinkingIOS',
+    'RCTNetwork',
+    'RCTSettings',
+    'RCTText',
+    'RCTVibration',
+    'RCTWebSocket',
+  ]
+
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  pod 'react-native-maps', :path => '../node_modules/react-native-maps'
+  pod 'react-native-camera', :path => '../node_modules/react-native-camera'
+
+  pod 'tipsi-stripe', :path => '../node_modules/tipsi-stripe'
+
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if target.name == "React"
+      target.remove_from_project
+    end
+  end
+end
+
+target 'Suds-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Suds-tvOS
+
+  target 'Suds-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
